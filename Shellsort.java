@@ -6,7 +6,7 @@ public class Shellsort {
         System.out.println();
     }
 
-    private static void ShellSortAlgorithm(int[] array) {
+    private static void ShellSort(int[] array) {
         int h = 1;
         while (h < (array.length - 1) / 9) {
             h = 3 * h + 1;
@@ -27,7 +27,7 @@ public class Shellsort {
 
     public static void main(String[] args) {
         int[] array = { 1, 2, 6, 4, 8, 5, 9, 4, 5, 7, 10, 13, 16, 18, 14, 18, 12, 14, 19, };
-        ShellSortAlgorithm(array);
+        ShellSort(array);
         printArray(array);
         ;
     }
